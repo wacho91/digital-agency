@@ -3,7 +3,7 @@
 function App() {
 
   return (
-    <div className="text-3xl font-bold underline">
+    <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
         Hello World
     </div>
   )
