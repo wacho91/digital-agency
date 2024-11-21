@@ -1,5 +1,6 @@
 
 import Logo from "../../assets/website/Vector.svg"
+import DarkMode from "./DarkMode";
 
 export const MenuLinks = [
     {
@@ -45,6 +46,7 @@ const Navbar = () => {
                             </li>
                         ))}
                         <button className="primary-btn">Get in Touch</button>
+                        <DarkMode />
                     </ul>
                 </nav>
                  {/* Mobile view Drawer  */}
