@@ -1,6 +1,9 @@
 
+import { useState } from "react";
 import Logo from "../../assets/website/Vector.svg"
 import DarkMode from "./DarkMode";
+import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 export const MenuLinks = [
     {
@@ -21,6 +24,13 @@ export const MenuLinks = [
 ];
 
 const Navbar = () => {
+
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    }
+
   return (
     <div>
         <div>
@@ -49,9 +59,27 @@ const Navbar = () => {
                         <DarkMode />
                     </ul>
                 </nav>
-                 {/* Mobile view Drawer  */}
+                {/* Mobile view Drawer  */}
+                <div>
+                    <DarkMode />
+                    {/* Mobile Hamburger icon */}
+                    {showMenu ? (
+                        <HiMenuAlt1 
+                            onClick={toggleMenu}
+                            className=" cursor-pointer transition-all"
+                            size={30}
+                        />
+                    ) : (
+                        <HiMenuAlt3 
+                            onClick={toggleMenu}
+                            className=" cursor-pointer transition-all"
+                            size={30}
+                        />
+                    )}
+                </div>
             </div>
         </div>
+        <ResponsiveMenu showMenu={showMenu} />
     </div>
   )
 }
