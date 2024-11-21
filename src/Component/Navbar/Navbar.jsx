@@ -32,15 +32,19 @@ const Navbar = () => {
     }
 
   return (
-    <div>
-        <div>
-            <div>
+    <div className="relative z-10 w-full dark:bg-black dark:text-white duration-300">
+        <div className="container py-3 md:py-2">
+            <div className="flex justify-between items-center">
                 {/* Logo section */}
                 <a
                     target="_blank"
                     href="https://www.youtube.com/channel/UC1H-a1MKEFXRiFlGNLcy7gQ?sub_confirmation=1"
+                    className="flex items-center gap-3"
                 >
                     <img src={Logo} alt="" className="w-5" />
+                    <span className="text-2xl sm:text-3xl font-semibold">
+                        Digital agency
+                    </span>
                 </a>
                 {/* Desktop view Navigation */}
                 <nav className="hidden md:block">
@@ -60,7 +64,7 @@ const Navbar = () => {
                     </ul>
                 </nav>
                 {/* Mobile view Drawer  */}
-                <div>
+                <div className="flex items-center gap-4 md:hidden ">
                     <DarkMode />
                     {/* Mobile Hamburger icon */}
                     {showMenu ? (
