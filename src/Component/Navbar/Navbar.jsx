@@ -32,18 +32,22 @@ const Navbar = () => {
                     <img src={Logo} alt="" className="w-5" />
                 </a>
                 {/* Desktop view Navigation */}
-                <nav>
-                    <ul>
+                <nav className="hidden md:block">
+                    <ul className="flex items-center gap-3">
                         {MenuLinks.map(({ id, name, link }) => (
                             <li key={id}>
-                                <a href={link}>
+                                <a 
+                                    href={link}
+                                     className=" text-lg font-medium  hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500  "
+                                >
                                     {name}
                                 </a>
                             </li>
                         ))}
-                        <button>Get in Touch</button>
+                        <button className="primary-btn">Get in Touch</button>
                     </ul>
                 </nav>
+                 {/* Mobile view Drawer  */}
             </div>
         </div>
     </div>
