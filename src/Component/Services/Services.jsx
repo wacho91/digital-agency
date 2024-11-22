@@ -47,10 +47,16 @@ const Services = () => {
             <div className="container">
                 {/* Header */}
                 <div className="pb-12 text-center space-y-3">
-                    <h1 className="text-3xl font-semibold sm:text-3xl text-violet-950 dark:text-primary">
+                    <h1
+                        data-aos="fade-up" 
+                        className="text-3xl font-semibold sm:text-3xl text-violet-950 dark:text-primary"
+                    >
                         Explore Our Services
                     </h1>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    <p 
+                        data-aos="fade-up"
+                        className="text-gray-600 dark:text-gray-400 text-sm"
+                    >
                         We are self-service data analytics software that lets you create
                         visually.
                     </p>
@@ -60,6 +66,8 @@ const Services = () => {
                     {skillsData.map((skill) => (
                         <div 
                             key={skill.nsme}
+                            data-aos="fade-up"
+                            data-aos-delay={skill.aosDelay}
                             className="card space-y-3 sm:space-y-4 p-4"
                         >
                             <div>{skill.icon}</div>
@@ -71,7 +79,12 @@ const Services = () => {
                     ))}
                 </div>
                 {/* button */}
-                <div className="text-center mt-4 sm:mt-8">
+                <div
+                    data-aos="fade-up"
+                    data-aos-delay="900"
+                    data-aos-offset="0" 
+                    className="text-center mt-4 sm:mt-8"
+                >
                     <button className="primary-btn">
                         Learn More
                     </button>
