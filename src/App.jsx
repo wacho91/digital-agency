@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Navbar from "./Component/Navbar/Navbar";
+import Hero from "./Component/Hero/Hero";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
         <Navbar />
+        <Hero />
     </div>
   )
 }
