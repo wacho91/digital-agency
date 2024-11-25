@@ -8,6 +8,7 @@ import Hero from "./Component/Hero/Hero";
 import BrandsLogo from "./Component/BrandsLogo/BrandsLogo";
 import Services from "./Component/Services/Services";
 import Testimonial from "./Component/Testimonial/Testimonial";
+import BlogsComp from "./Component/BlogsComp/BlogsComp";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <BrandsLogo />
         <Services />
         <Testimonial />
+        <BlogsComp />
     </div>
   )
 }
