@@ -40,29 +40,32 @@ const Testimonial = () => {
 
   return (
     <>
-      <div>
-            <div>
+        <div className="py-10"> 
+            <div className="container">
                 {/* testimonial section */}
-                <div>
+                <div
+                    className="grid grid-cols-1 max-w-screen-xl mx-auto gap-6"
+                >
                     <Slider {...settings}>
                         {testimonialData.map(({id, name, text, img}) => {
                             return (
-                                <div key={id}>
+                                <div key={id} className="my-6">
                                     {/*Card*/}
-                                    <div>
+                                    <div className="flex flex-col sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl dark:bg-gray-800 relative">
                                         <img 
                                             src={img} 
                                             alt="image" 
+                                            className="block mx-auto h-[300px] w-full sm:w-[200px] object-cover"
                                         />
-                                        <div>
-                                            <p>
+                                        <div className="space-y-4">
+                                            <p className="text-gray-500 text-black/80 dark:text-white/80 xl:pr-40">
                                                 “{text}”
                                             </p>
-                                            <h1>
+                                            <h1 className="text-xl font-bold">
                                                 {name}
                                             </h1>
                                         </div>
-                                        <p>
+                                        <p className="text-black/10 text-[12rem] font-serif absolute bottom-0 right-0">
                                             ,,
                                         </p>
                                     </div>
