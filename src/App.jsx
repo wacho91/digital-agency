@@ -7,6 +7,7 @@ import Navbar from "./Component/Navbar/Navbar";
 import Hero from "./Component/Hero/Hero";
 import BrandsLogo from "./Component/BrandsLogo/BrandsLogo";
 import Services from "./Component/Services/Services";
+import Testimonial from "./Component/Testimonial/Testimonial";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Hero />
         <BrandsLogo />
         <Services />
+        <Testimonial />
     </div>
   )
 }
