@@ -44,6 +44,7 @@ const Testimonial = () => {
             <div className="container">
                 {/* testimonial section */}
                 <div
+                    data-aos="fade-up"
                     className="grid grid-cols-1 max-w-screen-xl mx-auto gap-6"
                 >
                     <Slider {...settings}>
