@@ -9,6 +9,7 @@ import BrandsLogo from "./Component/BrandsLogo/BrandsLogo";
 import Services from "./Component/Services/Services";
 import Testimonial from "./Component/Testimonial/Testimonial";
 import BlogsComp from "./Component/BlogsComp/BlogsComp";
+import Footer from "./Component/Footer/Footer";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <Services />
         <Testimonial />
         <BlogsComp />
+        <Footer />
     </div>
   )
 }
